@@ -1,5 +1,5 @@
 package banco;
-public class ContaBancaria {
+public class ContaBancaria extends Contas{
     private String nomeCorrentista;
     protected double saldo;
     public ContaBancaria(String nome, double saldo) {
@@ -25,5 +25,13 @@ public class ContaBancaria {
     public String toString() {
         return "Conta de " + nomeCorrentista 
             + " com saldo de R$ " + String.format("%.2f", saldo);
+    }
+
+    public double consultarLimite(){
+        return 0;
+    }
+
+    public void alterarLimite(double limite){
+
     }
 }
